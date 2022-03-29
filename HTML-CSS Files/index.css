@@ -1,0 +1,68 @@
+body{
+    background-color: blueviolet;
+}
+
+.container{
+    position: relative;
+    color: black;
+    font-family: Menlo;
+}
+
+#top{
+    position: fixed;
+    width: 100%;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align : center;
+}
+#top > span{
+    color: goldenrod;
+}
+
+.fields{
+    border: 6px dotted black;    
+}
+
+#line{
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-size: 25px;
+}
+
+#ff{
+    margin-left: 20px;
+}
+
+.details *{
+    color: white;
+    border-radius: 20px;
+    margin:3px 3px 5px 0px;
+    background-image: linear-gradient(to left, white, blue);
+}
+
+#formBtn{
+    color: white;
+    font-family: Monaco;
+    margin-left: 12px;
+    border-radius: 20px;
+    background-image: grey;
+}
+
+div #pic{
+    border-radius: 20px;
+}
+#pic {
+    width: 100%;
+}
+#bottom{
+    position: fixed;
+    width: 100%;
+    text-align : center;
+    bottom: 1%;
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+#bottom > span{
+    color: goldenrod;
+}
