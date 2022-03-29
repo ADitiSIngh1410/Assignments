@@ -1,0 +1,120 @@
+body{
+    margin: 250px;
+}
+
+.container{
+    display: inline-block;
+    margin: 2px;
+}
+.card{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: 1px;
+    border-style: double;
+    height: 500px;
+    width: 241px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 5px slategrey;
+}
+
+#pics{
+    margin-top: 35px;
+    background-color: rgb(237, 240, 243);
+}
+
+.card > p{
+    text-align: left;
+    margin-left: 4px;
+    font-family:Menlo;
+    font-size: 13px;
+    font-weight:600;
+}
+
+.card p:hover{
+    color: #B12704;
+}
+
+#star{
+    display: inline;
+    float: left;
+    margin-left: 4px;
+}
+
+#drop{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+}
+
+#drop > span{ 
+    font-size: 14px;   
+    color: #007185;
+}
+
+#dollar{
+    margin-left: 4px;
+    font-size:15px;
+    position: absolute;
+    left: 3px;
+}
+
+#amt{
+    font-size: 23px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    position: absolute;
+    left: 14px;
+}
+
+#paise{
+    position: absolute;
+    left: 53px;
+}
+
+#rate{
+    position: absolute;
+    text-decoration-line: line-through;
+    left: 75px;
+    top: 320px;
+}
+
+#stockDetail{
+    font-family: "Amazon Ember",Arial,sans-serif;;
+    position: absolute;
+    left: 6px;
+    color: #B12704;
+}
+
+#opt1{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    position: absolute;
+    font-size: 15px;
+    color: slategrey;
+    left: 6px;
+}
+
+#opt2{
+    position: absolute;
+    left: 6px;
+    top: 430px;
+    font-size: 14px;
+}
+#opt2 #op1{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-weight: 500;
+}
+#op2{
+    font-weight: 100;
+    color: #007185;
+}
+#op2:hover{
+    color: #B12704;
+}
+#choice{
+    position: absolute;
+    top: 0px;
+
+}
