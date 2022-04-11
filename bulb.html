@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function on(){
+            document.getElementById("theImage").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+            document.getElementById("upper").style = "background-color: grey;"
+        }
+
+        function off(){
+            document.getElementById("theImage").src = "https://www.w3schools.com/js/pic_bulboff.gif" ;  
+            document.getElementById("upper").style = "background-color: black;"     
+        }
+
+        var bulbStatus = true;
+        function toggle() {
+            if(!bulbStatus){
+                document.getElementById("theImage2").src = "https://www.w3schools.com/js/pic_bulboff.gif" ;
+                document.getElementById("lower").style = "background-color: black;"
+            }
+            else {
+                document.getElementById("theImage2").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+                document.getElementById("lower").style = "background-color: grey;"
+            }
+            bulbStatus = !bulbStatus;
+        }
+    </script>
+    <style>
+        body {
+            display: block;
+            background-color: black;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-content: center;
+        }
+        #upper{
+            background-color: black;
+            height: 49%;
+            width: 90%;
+            text-align: center;
+            border: 55px beige;
+            border-width: 5px;
+            border-style:outset;
+        }
+    
+        #lower{
+                
+                position: absolute;
+                bottom: 0px;
+                height: 49%;
+                width: 90%;
+                text-align: center;
+                border: 55px bisque;
+                border-width: 5px;
+                border-style:outset;
+            }
+        #theImage{
+            
+            text-align: center;
+            height: 250px;
+            width: 140px;
+            position: relative;
+        }
+        #theImage2{
+            text-align: center;
+            height: 250px;
+            width: 140px;
+            top: 50px;
+            position: relative;
+            
+        }
+        .button {
+            color:chocolate;
+            background-color: black;
+            align-self: center;
+            margin-top: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body id="body">
+  
+   <div id = "upper">
+        <img id= "theImage" src="https://www.w3schools.com/js/pic_bulboff.gif">
+        <br>
+        <button onclick="on()" class = "button">ON</button>
+        <button onclick="off()" class = "button">OFF</button>
+   </div>
+
+   <br><br><br>
+
+   <div id = "lower">
+        <img id= "theImage2" src="https://www.w3schools.com/js/pic_bulboff.gif">
+        <br><br><br>
+        <button onclick="toggle()" class = "button">ON/OFF</button>
+    </div>
+</html>
